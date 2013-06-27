@@ -1,0 +1,6 @@
+#!usr/bin/env node
+var fs = require("fs");
+var outfile = "hello.txt";
+var out = "Testo che va dentro al file";
+fs.writeFileSync(outfile, out);
+console.log("Lo Script: " + __filename + "\nHa scritto: " + out + "\nIn: " + outfile);
